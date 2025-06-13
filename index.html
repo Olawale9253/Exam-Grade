@@ -7,8 +7,12 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f0f4f8;
-            padding: 30px;
+            background-image: url(img.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top;
+            padding: 180px;
+            text-align: center;
         }
 
         h2 {
@@ -30,7 +34,7 @@
         button {
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #006600;
+            background-color: #b38654;
             color: white;
             border: none;
             cursor: pointer;
@@ -84,7 +88,47 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
+            </select>&nbsp;
+            <select class="olevel">
+                <option value="6">A1</option>
+                <option value="5">B2</option>
+                <option value="4">B3</option>
+                <option value="3">C4</option>
+                <option value="2">C5</option>
+                <option value="1">C6</option>
+                <option value="0">D7 or below</option>
             </select>
+        </label>
+        <label>O'level:
+            <select class="subject">
+                <option value="Mathematics">Mathematics</option>
+                <option value="English Language">English Language</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Physics">Physics</option>
+                <option value="Yoruba">Yoruba</option>
+                <option value="Biology">Biology</option>
+                <option value="Civic Education">Civic Education</option>
+                <option value="Agricultural Science">Agricultural Science</option>
+                <option value="Animal Husbandry">Animal Husbandry</option>
+                <option value="Home Economics">Home Economics</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Finalcial Accounting">Financial Accounting</option>
+                <option value="Geography">Geography</option>
+                <option value="Government">Government</option>
+                <option value="Technical Drawing">Technical Drawing</option>
+                <option value="Marketing">Marketing</option>
+                <option value="IRK/CRK">IRK/CRK</option>
+                <option value="History">History</option>
+                <option value="Literature-in-English">Literature-in-English</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="Tourism and Nutrition">Tourism And Nutrition</option>
+                <option value="Catering">Catering</option>
+                <option value="Garment Making">Garment Making</option>
+                <option value="Textiles">Textiles</option>
+                <option value="Fine Arts">Fine Arts</option>
+                <option value="Mathematics">Mathematics</option>
+
+            </select>&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -124,7 +168,7 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
-            </select>
+            </select>&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -164,7 +208,7 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
-            </select>
+            </select>&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -204,47 +248,7 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
-            </select>
-            <select class="olevel">
-                <option value="6">A1</option>
-                <option value="5">B2</option>
-                <option value="4">B3</option>
-                <option value="3">C4</option>
-                <option value="2">C5</option>
-                <option value="1">C6</option>
-                <option value="0">D7 or below</option>
-            </select>
-        </label>
-        <label>O'level:
-            <select class="subject">
-                <option value="English Language">English Language</option>
-                <option value="Mathematics">Mathematics</option>
-                <option value="Chemistry">Chemistry</option>
-                <option value="Physics">Physics</option>
-                <option value="Yoruba">Yoruba</option>
-                <option value="Biology">Biology</option>
-                <option value="Civic Education">Civic Education</option>
-                <option value="Agricultural Science">Agricultural Science</option>
-                <option value="Animal Husbandry">Animal Husbandry</option>
-                <option value="Home Economics">Home Economics</option>
-                <option value="Commerce">Commerce</option>
-                <option value="Finalcial Accounting">Financial Accounting</option>
-                <option value="Geography">Geography</option>
-                <option value="Government">Government</option>
-                <option value="Technical Drawing">Technical Drawing</option>
-                <option value="Marketing">Marketing</option>
-                <option value="IRK/CRK">IRK/CRK</option>
-                <option value="History">History</option>
-                <option value="Literature-in-English">Literature-in-English</option>
-                <option value="Business Administration">Business Administration</option>
-                <option value="Tourism and Nutrition">Tourism And Nutrition</option>
-                <option value="Catering">Catering</option>
-                <option value="Garment Making">Garment Making</option>
-                <option value="Textiles">Textiles</option>
-                <option value="Fine Arts">Fine Arts</option>
-                <option value="Mathematics">Mathematics</option>
-
-            </select>
+            </select>&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -257,7 +261,9 @@
         </label>
     </div>
 
-    <button onclick="calculateScreening()">Calculate Screening Score</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button onclick="calculateScreening()">Calculate
+        Screening
+        Score</button>
 
     <div class="result" id="resultDisplay"></div>
 
