@@ -16,12 +16,14 @@
         }
 
         h2 {
-            color: #333;
+            color: #b38654
         }
 
         label {
             display: block;
             margin-top: 10px;
+            color: #b38654;
+
         }
 
         select,
@@ -29,6 +31,8 @@
             padding: 6px;
             margin-top: 5px;
             width: 100px;
+            color: rgb(93, 90, 90);
+            font-size: 14px;
         }
 
         button {
@@ -44,19 +48,26 @@
             margin-top: 30px;
             font-size: 18px;
             font-weight: bold;
+            color: rgb(226, 56, 56);
+        }
+
+        .dev {
+            color: #b38654;
+
+
         }
     </style>
 </head>
 
 <body>
 
-    <h2>LAUTECH Screening Calculator</h2>
+    <h2 style="color: rgb(226, 56, 56);">LAUTECH Screening Calculator</h2>
 
     <label>Enter JAMB Score (out of 400):
         <input type="number" id="jambScore" min="0" max="400">
     </label>
 
-    <h3>O'Level Grades for 5 Subjects</h3>
+    <h3 style="color: #b38654;">O'Level Grades for 5 Subjects</h3>
 
     <div id="olevelGrades">
         <label>O'level:
@@ -88,7 +99,7 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
-            </select>&nbsp;
+            </select>&nbsp;&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -128,7 +139,7 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
-            </select>&nbsp;
+            </select>&nbsp;&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -168,7 +179,7 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
-            </select>&nbsp;
+            </select>&nbsp;&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -208,7 +219,7 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
-            </select>&nbsp;
+            </select>&nbsp;&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -248,7 +259,7 @@
                 <option value="Fine Arts">Fine Arts</option>
                 <option value="Mathematics">Mathematics</option>
 
-            </select>&nbsp;
+            </select>&nbsp;&nbsp;
             <select class="olevel">
                 <option value="6">A1</option>
                 <option value="5">B2</option>
@@ -284,10 +295,15 @@
             document.getElementById("resultDisplay").innerHTML = `
         JAMB Score: ${jambScore / 400 * 75}<br>
         O'Level Points: ${olevelTotal / 30 * 25}<br><br>
-        <strong>Agreggate Screening Score: ${screeningScore.toFixed(2)}</strong>
+        <strong>Agreggate Screening Score: ${screeningScore.toFixed(2)}
       `;
         }
-    </script>
+
+    </script><br><br>
+    <div class="dev">
+        <marquee direction="right" width="60%"> <strong><i>Developed and Design by OLA &copy; 2025</i></strong>
+        </marquee>
+    </div>
 
 </body>
 
