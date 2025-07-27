@@ -291,13 +291,13 @@
                 olevelTotal += parseInt(sel.value);
             });
 
-            const jambWeighted = jambScore / 400 * 75;
-            const olevelWeighted = olevelTotal / 30 * 25;
+            const jambWeighted = jambScore / 400 * 80;
+            const olevelWeighted = olevelTotal / 30 * 20;
             const screeningScore = jambWeighted + olevelWeighted;
 
             document.getElementById("resultDisplay").innerHTML = `
-        JAMB Score: ${jambScore / 400 * 75}<br>
-        O'Level Points: ${olevelTotal / 30 * 25}<br><br>
+        JAMB Score: ${jambScore / 400 * 80}<br>
+        O'Level Points: ${olevelTotal / 30 * 20}<br><br>
         <strong>Agreggate Screening Score: ${screeningScore.toFixed(2)}
       `;
         }
